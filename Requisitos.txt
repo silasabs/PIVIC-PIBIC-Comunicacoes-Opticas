@@ -1,0 +1,5 @@
+scipy 
+sympy
+numpy 
+matplotlib >= 1.4.3
+tensorflow
