@@ -13,7 +13,7 @@ Assim se o valor absoluto ![equation](https://latex.codecogs.com/gif.latex?%7CE%
 Em sistemas de comunicações ópticas os algoritmos de recuperação de fase podem ser utilizados em conjunto com receptores DD para a implementação de detecção coerente, uma vez que tais algoritmos recuperam a fase do sinal recebido e, portanto, também a informação nela presente.
 
 Aplicação de um algoritmo de recuperação de fase
-[![Algoritmo.png](https://i.postimg.cc/L66XHDDB/Algoritmo.png)](https://postimg.cc/py4xCDgp)
+[![Algoritmo.png](https://i.postimg.cc/kX4Jr4MT/Algoritmo.png)](https://postimg.cc/vDJFfGVn)
 
 Logo poderemos determinar se RNAs podem ser ferramentas úteis na construção de algoritmos de PDS para receptores ópticos de baixo custo e alta eficiência energética.
 
