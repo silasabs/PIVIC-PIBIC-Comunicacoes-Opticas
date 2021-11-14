@@ -6,7 +6,9 @@ Neste projeto buscamos desenvolver e implementar métodos de PDS e aprendizado d
 ## Algoritmo
 A recuperação de fase é o processo de determinar, por meio de um algoritmo, a fase de um sinal quando apenas medidas de sua amplitude são conhecidas.  Dado um  sinal complexo ![equation](https://latex.codecogs.com/gif.latex?E%28t%29), de amplitude ![equation](https://latex.codecogs.com/gif.latex?%7CE%28t%29%7C) e fase ![equation](https://latex.codecogs.com/gif.latex?%5Cphi%28t%29), este pode ser representado por
 
-![equation](https://latex.codecogs.com/gif.latex?E%28t%29%3D%7CE%28t%29%7Ce%5E%7B%5Cphi%28t%29%7D)
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?E%28t%29%3D%7CE%28t%29%7Ce%5E%7B%5Cphi%28t%29%7D">
+</p>
 
 Assim se o valor absoluto ![equation](https://latex.codecogs.com/gif.latex?%7CE%28t%29%7C) for conhecido, ou medidas do valor absoluto de funções de ![equation](https://latex.codecogs.com/gif.latex?E%28t%29) forem conhecidas, um algoritmo de recuperação de fase pode ser utilizadado para conseguirmos determinar ![equation](https://latex.codecogs.com/gif.latex?%5Cphi%28t%29). Para que tudo isso seja possível geralmente requer-se que ![equation](https://latex.codecogs.com/gif.latex?E%28t%29) obedeça a certas condições, que dependerão de restrições impostas pelo problema.
 
