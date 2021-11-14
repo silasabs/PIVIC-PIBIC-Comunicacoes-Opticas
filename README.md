@@ -1,5 +1,5 @@
 # PIVIC - Recuperação da fase de sinais ópticos  baseada em machine learning
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPhase_retrieval&count_bg=%233B72CE&title_bg=%23000000&icon=wikipedia.svg&icon_color=%23FFFFFF&title=More+information&edge_flat=false)](https://hits.seeyoufarm.com) [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPhase_retrieval&count_bg=%233B72CE&title_bg=%23000000&icon=wikipedia.svg&icon_color=%23FFFFFF&title=More+information&edge_flat=false)](https://en.wikipedia.org/wiki/Phase_retrieval) [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 Neste projeto buscamos desenvolver e implementar métodos de PDS e aprendizado de máquina baseada em redes neurais artificiais (RNAs) para o problema de recuperação de fase de sinais ópticos.
 
