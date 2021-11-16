@@ -24,4 +24,10 @@ Logo poderemos determinar se RNAs podem ser ferramentas úteis na construção d
 
 **Por favor, observar os [requisitos.](https://github.com/silasabs/PIVIC-Comunicacoes-Opticas/blob/main/requisitos.txt)**
 
+Clone este repositório
+
+    $ git clone https://github.com/silasabs/PIVIC-Comunicacoes-Opticas
+    
+Após a finalização do projeto e lançamento público do repositório.
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fgithub.com%2Fsilasabs%2FPIVIC-Comunicacoes-Opticas/main)
