@@ -1,4 +1,13 @@
+# Default_encoding: UTF-8
 # Neural network functions, observe the requirements.txt
+
+# Auxiliary functions
+
+def generator():
+  """
+  Função que gera inteiros aleatórios.
+  """
+  return random.random()
 
 # Activation functions
 
@@ -37,10 +46,4 @@ def signum(v_signal):
     return activFunction
 
 
-# Auxiliary functions
 
-def generator():
-  """
-  Função que gera inteiros aleatórios.
-  """
-  return random.random()
