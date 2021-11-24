@@ -1,5 +1,5 @@
 # Default_encoding: UTF-8
-# Neural network functions, observe the requirements.txt
+# Neural network functions
 
 # Auxiliary functions
 
