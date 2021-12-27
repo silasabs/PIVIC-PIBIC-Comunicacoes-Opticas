@@ -1,5 +1,0 @@
-scipy >= 0.15.0
-sympy 
-numpy >= 1.9.2
-matplotlib >= 1.4.3
-tensorflow >= 2.5
