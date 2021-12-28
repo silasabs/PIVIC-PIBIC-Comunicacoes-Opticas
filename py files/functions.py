@@ -70,7 +70,7 @@ def estimativa_coef(x, y):
 
   # Determinação dos coeficientes
   b1 = SS_xy / SS_xx
-  b0 = mean_y - b_1 * mean_x
+  b0 = mean_y - b1 * mean_x
 
   return (b0, b1)
 
