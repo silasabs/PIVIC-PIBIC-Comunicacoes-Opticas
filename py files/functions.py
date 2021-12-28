@@ -45,5 +45,50 @@ def signum(v_signal):
     activFunction = np.sign(v_signal)
     return activFunction
 
+# linear regression functions
+
+def estimativa_coef(x, y):
+  """
+  Está função usa o método dos mínimos quadrados como forma de estimar os coeficientes da reta de regressão
+  param x, y: diagrama de dispersão.
+
+  return b0, b1: coeficientes estimados.
+  """
+  # x e y recebem as  a variáveis de alvo e as variáveis independentes.
+  # Contendo o diagrama de dispersão.
+   .
+  
+  n = np.size(x) # número de observações visto que y depende de x
+
+  # retirando a média dos valores de x e y
+  mean_x = np.mean(x) 
+  mean_y = np.mean(y)
+
+  # calcula o desvio cruzado e o desvio sobre x
+  SS_xy = np.sum(y * x) - n * mean_y * mean_x
+  SS_xx = np.sum(x * x) - n * mean_x * mean_x
+
+  # Determinação dos coeficientes
+  b1 = SS_xy / SS_xx
+  b0 = mean_y - b_1 * mean_x
+
+  return (b0, b1)
 
 
+def plot_regression_line(x, y, b):
+  """
+  Está função realiza o plot da reta de regressão sobre o diagrama de dispersão
+  param x, y: diagrama de dispersão.
+  param b: coeficientes estimados.
+  """
+  # esta função plota a reta de regressão
+  plt.scatter(x, y)
+
+  # predição
+  y = b[0] + b[1] * x
+  plt.plot(x, y)
+
+  plt.xlabel('x')
+  plt.ylabel('y')
+
+  plt.show()
