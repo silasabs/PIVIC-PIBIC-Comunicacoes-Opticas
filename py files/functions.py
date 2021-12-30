@@ -81,10 +81,10 @@ def plot_regression_line(x, y, b):
   param x, y: diagrama de dispersão.
   param b: coeficientes estimados.
   """
-  # esta função plota a reta de regressão
+  # plot do diagrama de dispersão.
   plt.scatter(x, y)
 
-  # predição
+  # plot da reta de regressão.
   y = b[0] + b[1] * x
   plt.plot(x, y)
 
