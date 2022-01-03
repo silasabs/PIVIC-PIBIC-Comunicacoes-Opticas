@@ -49,7 +49,7 @@ def signum(v_signal):
 
 def estimativa_coef(x, y):
   """
-  Está função usa o método dos mínimos quadrados como forma de estimar os coeficientes da reta de regressão
+  Esta função usa o método dos mínimos quadrados como forma de estimar os coeficientes da reta de regressão
   param x, y: diagrama de dispersão.
 
   return b0, b1: coeficientes estimados.
@@ -77,7 +77,7 @@ def estimativa_coef(x, y):
 
 def plot_regression_line(x, y, b):
   """
-  Está função realiza o plot da reta de regressão sobre o diagrama de dispersão
+  Esta função realiza o plot da reta de regressão sobre o diagrama de dispersão
   param x, y: diagrama de dispersão.
   param b: coeficientes estimados.
   """
