@@ -22,7 +22,7 @@ Em sistemas de comunicações ópticas os algoritmos de recuperação de fase po
 
 Logo poderemos determinar se RNAs podem ser ferramentas úteis na construção de algoritmos de PDS para receptores ópticos de baixo custo e alta eficiência energética.
 
-**Por favor, observar os [requisitos.](https://github.com/silasabs/PIVIC-Comunicacoes-Opticas/blob/main/requisitos.txt)**
+**Por favor, observar os [requisitos.](https://github.com/silasabs/PIVIC-Comunicacoes-Opticas/blob/main/requirements.txt)**
 
 Clone este repositório
 
