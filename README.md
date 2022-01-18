@@ -26,7 +26,9 @@ Logo poderemos determinar se RNAs podem ser ferramentas úteis na construção d
 
 Clone este repositório
 
-    $ git clone https://github.com/silasabs/PIVIC-Comunicacoes-Opticas
+    $ git clone https://github.com/silasabs/PIVIC-Comunicacoes-Opticas.git
+    $ cd PIVIC-Comunicacoes-Opticas
+    $ python setup.py install
     
 Após a finalização do projeto e lançamento público do repositório.
 
