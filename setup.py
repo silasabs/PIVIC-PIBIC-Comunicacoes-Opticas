@@ -16,7 +16,6 @@ def requirements(file):
     return [line for line in lineiter if line and not line.startswith("#")]
 
 setup(
-
     name = DISTNAME,
     maintainer = MAINTAINER,
     description = DESCRIPTION,
@@ -32,5 +31,5 @@ setup(
         'Topic :: Scientific/Engineering',
         'Topic :: Software Development',
     ],
-    python_requires = '>=3.2',
+    python_requires = '>=3.9',
 )
