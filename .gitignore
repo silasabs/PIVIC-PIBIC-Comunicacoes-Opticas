@@ -1,5 +1,8 @@
+# Extensões de arquivos não versionados.
 *.pdf
 *.png
 
+# Referências de pesquisa.
 /referências
+# Arquivos de configurações do ambiente.
 /.vscode
