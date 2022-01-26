@@ -10,8 +10,11 @@ MAINTAINER = 'Silas João Bezerra Soares'
 URL = 'https: // github.com/silasabs/PIVIC-Comunicacoes-Opticas'
 LICENSE = 'MIT'
 
-# Função que carrega os requisitos necessários de um arquivo txt
 def requirements(file):
+    """
+    Função que carrega as dependências necessárias de um arquivo ".txt"
+    file: Arquivo que contém as dependências do projeto.
+    """
     lineiter = (line.strip() for line in open(file))
     return [line for line in lineiter if line and not line.startswith("#")]
 
