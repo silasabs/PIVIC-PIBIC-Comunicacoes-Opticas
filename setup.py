@@ -14,6 +14,8 @@ def requirements(file):
     """
     Função que carrega as dependências necessárias de um arquivo ".txt"
     file: Arquivo que contém as dependências do projeto.
+
+    return: lista de dependências do projeto como: [lib >= version, ...]
     """
     lineiter = (line.strip() for line in open(file))
     return [line for line in lineiter if line and not line.startswith("#")]
