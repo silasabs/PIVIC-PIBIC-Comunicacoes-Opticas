@@ -36,5 +36,3 @@ Após a finalização do projeto e lançamento público do repositório.
 
 ## Still to update
 Cronograma de atividades do projeto.
-
-- [x] 
