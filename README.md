@@ -39,7 +39,7 @@ Após a finalização do projeto e lançamento público do repositório.
 
 
 | CheckBox        | Description                                                             | Deadline |
-|:----------:     |:-------------                                                           |------:|
+|:----------:     |:-------------                                                           |:------:|
 | ✅ | Estudo\revisão bibliográfica sobre redes neurais artificiais.                       | SET/MAR |
 | ✅ | Estudo\revisão bibliográfica sobre sistemas de comunicações ópticas.                | SET/JAN |
 | ⬜️ | Simulação de um sistema óptico de transmissão com coerente e detecção direta.       | DEZ/MAI |
