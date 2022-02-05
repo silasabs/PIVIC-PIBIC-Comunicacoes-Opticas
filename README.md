@@ -34,5 +34,18 @@ Após a finalização do projeto e lançamento público do repositório.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fgithub.com%2Fsilasabs%2FPIVIC-Comunicacoes-Opticas/main)
 
-## Still to update
+### Still to update
+<br>
 Cronograma de atividades do projeto.
+<br><br>
+
+| CheckBox                                   | Description                                                                         | Deadline |
+|:----------                                 |:-------------                                                                       |------:|
+| <input type="checkbox" disabled checked/>  | Estudo\revisão bibliográfica sobre redes neurais artificiais.                       | SET/MAR |
+| <input type="checkbox" disabled checked/>  | Estudo\revisão bibliográfica sobre sistemas de comunicações ópticas.                | SET/JAN |
+| <input type="checkbox" disabled />  | Simulação de um sistema óptico de transmissão com coerente e detecção direta.       | DEZ/MAI |
+| <input type="checkbox" disabled />  | Implementação de um algoritmo de recuperação de fase baseado em RNAs.               | DEZ/MAI |
+| <input type="checkbox" disabled />  | Comparação de desempenho do algoritmo com outros métodos presentes na literatura.   | ABR/JUN |
+| <input type="checkbox" disabled />  | Escrita de relatórios\artigos.                                                      | JUN/AGO |
+
+
