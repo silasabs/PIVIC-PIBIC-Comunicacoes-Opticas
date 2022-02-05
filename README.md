@@ -38,12 +38,13 @@ Após a finalização do projeto e lançamento público do repositório.
 <p align="center"> Cronograma de atividades do projeto. </p>
 <br><br>
 
-| CheckBox                                   | Description                                                                  | Deadline |
-|:----------                                 |:-------------                                                                |------:|
-| ✅ | Estudo\revisão bibliográfica sobre redes neurais artificiais.                                                        | SET/MAR |
-| ✅ | Estudo\revisão bibliográfica sobre sistemas de comunicações ópticas.                                                | SET/JAN |
-| <input type="checkbox" disabled />  | Simulação de um sistema óptico de transmissão com coerente e detecção direta.       | DEZ/MAI |
-| <input type="checkbox" disabled />  | Implementação de um algoritmo de recuperação de fase baseado em RNAs.               | DEZ/MAI |
-| <input type="checkbox" disabled />  | Comparação de desempenho do algoritmo com outros métodos presentes na literatura.   | ABR/JUN |
-| <input type="checkbox" disabled />  | Escrita de relatórios\artigos.                                                      | JUN/AGO |
+| CheckBox        | Description                                                             | Deadline |
+|:----------:     |:-------------                                                           |------:|
+| ✅ | Estudo\revisão bibliográfica sobre redes neurais artificiais.                       | SET/MAR |
+| ✅ | Estudo\revisão bibliográfica sobre sistemas de comunicações ópticas.                | SET/JAN |
+| ⬜️ | Simulação de um sistema óptico de transmissão com coerente e detecção direta.       | DEZ/MAI |
+| ⬜️ | Implementação de um algoritmo de recuperação de fase baseado em RNAs.               | DEZ/MAI |
+| ⬜️ | Comparação de desempenho do algoritmo com outros métodos presentes na literatura.   | ABR/JUN |
+| ⬜️ | Escrita de relatórios\artigos.                                                      | JUN/AGO |
+
 
