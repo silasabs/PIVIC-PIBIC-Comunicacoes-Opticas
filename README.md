@@ -34,8 +34,9 @@ Após a finalização do projeto e lançamento público do repositório.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fgithub.com%2Fsilasabs%2FPIVIC-Comunicacoes-Opticas/main)
 
-### Still to update
+## Still to update
 <p align="center"> Cronograma de atividades do projeto. </p>
+
 
 | CheckBox        | Description                                                             | Deadline |
 |:----------:     |:-------------                                                           |------:|
