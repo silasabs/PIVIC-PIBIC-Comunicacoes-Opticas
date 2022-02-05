@@ -25,11 +25,16 @@ Logo poderemos determinar se RNAs podem ser ferramentas úteis na construção d
 **Por favor, observar os [requisitos.](https://github.com/silasabs/PIVIC-Comunicacoes-Opticas/blob/main/requirements.txt)**
 
 Clone este repositório e instale as dependências necessárias.
-
-    $ git clone https://github.com/silasabs/PIVIC-Comunicacoes-Opticas.git
-    $ cd PIVIC-Comunicacoes-Opticas
-    $ python setup.py install
-    
+```
+$ git clone https://github.com/silasabs/PIVIC-Comunicacoes-Opticas.git
+$ cd PIVIC-Comunicacoes-Opticas
+$ python setup.py install
+```    
 Após a finalização do projeto e lançamento público do repositório.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fgithub.com%2Fsilasabs%2FPIVIC-Comunicacoes-Opticas/main)
+
+## Still to update
+Cronograma de atividades do projeto.
+
+- [x] 
