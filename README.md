@@ -36,7 +36,6 @@ Após a finalização do projeto e lançamento público do repositório.
 
 ### Still to update
 <p align="center"> Cronograma de atividades do projeto. </p>
-<br><br>
 
 | CheckBox        | Description                                                             | Deadline |
 |:----------:     |:-------------                                                           |------:|
