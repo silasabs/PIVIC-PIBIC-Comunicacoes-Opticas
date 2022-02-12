@@ -1,7 +1,8 @@
 # PIVIC - Recuperação da fase de sinais ópticos  baseada em machine learning
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPhase_retrieval&count_bg=%233B72CE&title_bg=%23000000&icon=wikipedia.svg&icon_color=%23FFFFFF&title=More+information&edge_flat=false)](https://en.wikipedia.org/wiki/Phase_retrieval) [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Licence](https://img.shields.io/badge/License-MIT-critical)](https://github.com/silasabs/PIVIC-Comunicacoes-Opticas/blob/main/LICENSE)
 
 Neste projeto buscamos desenvolver e implementar métodos de PDS e aprendizado de máquina baseada em redes neurais artificiais (RNAs) para o problema de recuperação de fase de sinais ópticos.
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fgithub.com%2Fsilasabs%2FPIVIC-Comunicacoes-Opticas/main)
 
 ## Algoritmo
 A recuperação de fase é o processo de determinar, por meio de um algoritmo, a fase de um sinal quando apenas medidas de sua amplitude são conhecidas.  Dado um  sinal complexo ![equation](https://latex.codecogs.com/gif.latex?E%28t%29), de amplitude ![equation](https://latex.codecogs.com/gif.latex?%7CE%28t%29%7C) e fase ![equation](https://latex.codecogs.com/gif.latex?%5Cphi%28t%29), este pode ser representado por
@@ -30,21 +31,5 @@ $ git clone https://github.com/silasabs/PIVIC-Comunicacoes-Opticas.git
 $ cd PIVIC-Comunicacoes-Opticas
 $ python setup.py install
 ```    
-Após a finalização do projeto e lançamento público do repositório.
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fgithub.com%2Fsilasabs%2FPIVIC-Comunicacoes-Opticas/main)
-
-## Still to update
-<p align="center"> Cronograma de atividades do projeto. </p>
-
-
-| CheckBox        | Description                                                             | Deadline |
-|:----------:     |:-------------                                                           |:------:|
-| ✅ | Estudo\revisão bibliográfica sobre redes neurais artificiais.                       | SET/MAR |
-| ✅ | Estudo\revisão bibliográfica sobre sistemas de comunicações ópticas.                | SET/JAN |
-| ⬜️ | Simulação de um sistema óptico de transmissão com coerente e detecção direta.       | DEZ/MAI |
-| ⬜️ | Implementação de um algoritmo de recuperação de fase baseado em RNAs.               | DEZ/MAI |
-| ⬜️ | Comparação de desempenho do algoritmo com outros métodos presentes na literatura.   | ABR/JUN |
-| ⬜️ | Escrita de relatórios\artigos.                                                      | JUN/AGO |
-
-
+## Citando este repositório
+Silas João Bezerra Soares, (2022). silasabs/PIVIC-Comunicacoes-Opticas: Primeira release após os resultados finais da pesquisa.
