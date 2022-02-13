@@ -88,8 +88,8 @@ def edfa(Ei, Fs, G=20, NF=4.5, Fc=193.1e12):
     
     return: sinal óptico ruidoso amplificado [nparray]
     """
-    assert G > 0, "EDFA gain should be a positive scalar"
-    assert NF >= 3, "The minimal EDFA noise figure is 3 dB"
+    assert G > 0, "O ganho de EDFA deve ser um escalar positivo"
+    assert NF >= 3, "A figura mínima de ruído EDFA é de 3 dB"
 
     NF_lin = 10 ** (NF / 10)
     G_lin = 10 ** (G / 10)
