@@ -1,3 +1,6 @@
+# "optical_models" fornece modelos númericos para simular dispositivos encontrados 
+# em sistemas de comunicações ópticas.
+
 import numpy as np
 from numpy.fft import fft, fftfreq, ifft
 from numpy.random import normal
