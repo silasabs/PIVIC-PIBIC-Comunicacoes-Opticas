@@ -6,3 +6,6 @@
 /referências
 # Arquivos de configurações do ambiente.
 /.vscode
+# Arquivos de distribuição.
+/build
+/dist
