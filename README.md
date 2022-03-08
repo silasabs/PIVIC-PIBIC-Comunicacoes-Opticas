@@ -32,4 +32,4 @@ $ cd PIVIC-Comunicacoes-Opticas
 $ python setup.py install
 ```    
 ## Citando este repositório
-Silas João Bezerra Soares, (2022). silasabs/PIVIC-Comunicacoes-Opticas: Primeira release após os resultados finais da pesquisa.
+Silas João Bezerra Soares, & Edson Porto da Silva (2022). silasabs/PIVIC-Comunicacoes-Opticas: Primeira release após os resultados finais da pesquisa.
