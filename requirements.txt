@@ -3,7 +3,6 @@ sympy >= 1.7.1
 numpy >= 1.9.2
 matplotlib >= 1.4.3
 tensorflow >= 2.7.0
-scikit-learn >= 1.0.2
 Commpy >= 0.7.0
 numba >= 0.54.1
 tqdm
