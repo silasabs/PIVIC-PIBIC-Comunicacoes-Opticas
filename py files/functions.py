@@ -92,3 +92,50 @@ def plot_regression_line(x, y, b):
   plt.ylabel('y')
 
   plt.show()
+
+
+def Gear_Sax(s, a, b, h):
+    """
+    Modified Gerchberg–Saxton (GS)
+
+    param s: 
+    param a: Intensidade do sinal recebido.
+    param b: Medidas complementares após diferentes projeções
+    param h: [ndarray] Função de transferência para dispersão cromática da fibra.
+
+    return s: [ndarray]
+    return x: [ndarray] Estimativa do sinal transmitido.
+    """
+
+    #shape = h.ndim
+
+    b = np.array(b, dtype='complex').reshape(-1)
+    a = np.array(a, dtype='complex').reshape(-1)
+
+    bphase = np.angle(b)
+    aphase = np.angle(a)
+
+    try:
+       h_inv = np.linalg.inv(h)
+    except ValueError:
+        print('matrix must be 2 dimensional square')
+
+    # Compensação da disperção cromática.
+    h_inv = np.array(h_inv).reshape(-1)
+    h = np.array(h).reshape(-1)
+
+    x = np.convolve(h_inv, s, mode='full')
+    x = np.convolve(h, x, mode='full')
+    # linha 04 ??
+    s = np.convolve(h_inv, x, mode='full')
+    d = np.convolve(h, s, mode='full')
+    dphase = np.angle(d)
+
+    # produto externo das fases de d(t)b(t)
+    d = np.outer(dphase, bphase).reshape(-1)
+    s = np.convolve(h_inv, d, mode='full')
+    sphase = np.angle(s)
+    # produto externo entre as fases de s(t)a(t)
+    s = np.outer(sphase, aphase).reshape(-1)
+
+    return s, x
