@@ -1,15 +1,36 @@
-# Default_encoding: UTF-8
-# Neural network functions
+import numpy as np
+import tensorflow as tf
+from tensorflow.keras.callbacks import EarlyStopping
+from keras import Sequential
+from keras.layers import Dense, Flatten 
+import matplotlib.pyplot as plt
 
+# Default_encoding: UTF-8
 # Auxiliary functions
 
-def generator():
-  """
-  Função que gera inteiros aleatórios.
-  """
-  return random.random()
+#def generator():
+#  """
+#  Função que gera inteiros aleatórios.
+#  """
+#  return random.random()
 
 # Activation functions
+
+def ANN_model(X_train, y_train, X_test, y_test, patience=10):
+    """
+    Cria uma predefinição de um modelo e realiza o treinamento.
+    """
+    stop = EarlyStopping(monitor='val_loss', patience=patience)
+    model = Sequential()
+    model.add(Dense(16, activation='relu', input_shape=(X_test.shape[1],)))
+    model.add(Dense(8, activation='relu'))
+    #model.add(Dense(4, activation='relu'))
+    model.add(Dense(1))
+    model.compile(optimizer='adam', loss='mse')
+    model.fit(X_train, y_train, epochs=300, callbacks=[stop], validation_data=(X_test, y_test), batch_size=32)
+    
+    return model
+
 
 def heaviside(v_signal):
     """
@@ -56,7 +77,6 @@ def estimativa_coef(x, y):
   """
   # x e y recebem as  a variáveis de alvo e as variáveis independentes.
   # Contendo o diagrama de dispersão.
-   .
   
   n = np.size(x) # número de observações visto que y depende de x
 
@@ -92,50 +112,3 @@ def plot_regression_line(x, y, b):
   plt.ylabel('y')
 
   plt.show()
-
-
-def Gear_Sax(s, a, b, h):
-    """
-    Modified Gerchberg–Saxton (GS)
-
-    param s: 
-    param a: Intensidade do sinal recebido.
-    param b: Medidas complementares após diferentes projeções
-    param h: [ndarray] Função de transferência para dispersão cromática da fibra.
-
-    return s: [ndarray]
-    return x: [ndarray] Estimativa do sinal transmitido.
-    """
-
-    #shape = h.ndim
-
-    b = np.array(b, dtype='complex').reshape(-1)
-    a = np.array(a, dtype='complex').reshape(-1)
-
-    bphase = np.angle(b)
-    aphase = np.angle(a)
-
-    try:
-       h_inv = np.linalg.inv(h)
-    except ValueError:
-        print('matrix must be 2 dimensional square')
-
-    # Compensação da disperção cromática.
-    h_inv = np.array(h_inv).reshape(-1)
-    h = np.array(h).reshape(-1)
-
-    x = np.convolve(h_inv, s, mode='full')
-    x = np.convolve(h, x, mode='full')
-    # linha 04 ??
-    s = np.convolve(h_inv, x, mode='full')
-    d = np.convolve(h, s, mode='full')
-    dphase = np.angle(d)
-
-    # produto externo das fases de d(t)b(t)
-    d = np.outer(dphase, bphase).reshape(-1)
-    s = np.convolve(h_inv, d, mode='full')
-    sphase = np.angle(s)
-    # produto externo entre as fases de s(t)a(t)
-    s = np.outer(sphase, aphase).reshape(-1)
-
-    return s, x
