@@ -18,7 +18,7 @@ Em sistemas de comunicações ópticas os algoritmos de recuperação de fase po
 <p align="center"> Aplicação de um algoritmo de recuperação de fase </p>
 
 <p align="center">
-  <img src="https://i.postimg.cc/kX4Jr4MT/Algoritmo.png)](https://postimg.cc/vDJFfGVn">
+  <img src="https://i.postimg.cc/KYb8kb2W/diagrama-phase-retrieval.png">
 </p>
 
 Logo poderemos determinar se RNAs podem ser ferramentas úteis na construção de algoritmos de PDS para receptores ópticos de baixo custo e alta eficiência energética.
