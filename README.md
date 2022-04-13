@@ -1,4 +1,4 @@
-# PIVIC - Recuperação da fase de sinais ópticos  baseada em machine learning
+# PIVIC - Recuperação da Fase de Sinais Ópticos Baseada em Machine Learning
 
 Neste projeto buscamos desenvolver e implementar métodos de PDS e aprendizado de máquina baseada em redes neurais artificiais (RNAs) para o problema de recuperação de fase de sinais ópticos.
 
