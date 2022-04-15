@@ -7,24 +7,25 @@ from keras.layers import Dense, Flatten
 import matplotlib.pyplot as plt
 
 
-def ANN_model(X_train, y_train, X_test, y_test, patience=10):
+def get_model(X_train, y_train, N, patience=10):
     """
     Cria uma pre-definição de um modelo.
 
     param X_train, y_train: conjunto de dados de treinamento.
     param X_test, y_test: conjunto de dados de teste.
     param patience: número de épocas sem melhoria.
+    param N: Número de amostras
 
     return model: modelo pre-definido. 
     """
     stop = EarlyStopping(monitor='val_loss', patience=patience)
     model = Sequential()
-    model.add(Dense(16, activation='relu', input_shape=(X_test.shape[1],)))
+    model.add(Dense(4, activation='relu', input_shape=(N,)))
     model.add(Dense(8, activation='relu'))
     #model.add(Dense(4, activation='relu'))
-    model.add(Dense(1))
+    model.add(Dense(4))
     model.compile(optimizer='adam', loss='mse')
-    model.fit(X_train, y_train, epochs=300, callbacks=[stop], validation_data=(X_test, y_test), batch_size=32)
+    model.fit(X_train, y_train, epochs=300, callbacks=[stop], validation_split=0.3, batch_size=32)
     
     return model
 
