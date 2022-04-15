@@ -1,3 +1,4 @@
+# Default_encoding: UTF-8
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.callbacks import EarlyStopping
@@ -5,20 +6,16 @@ from keras import Sequential
 from keras.layers import Dense, Flatten 
 import matplotlib.pyplot as plt
 
-# Default_encoding: UTF-8
-# Auxiliary functions
-
-#def generator():
-#  """
-#  Função que gera inteiros aleatórios.
-#  """
-#  return random.random()
-
-# Activation functions
 
 def ANN_model(X_train, y_train, X_test, y_test, patience=10):
     """
-    Cria uma predefinição de um modelo e realiza o treinamento.
+    Cria uma pre-definição de um modelo.
+
+    param X_train, y_train: conjunto de dados de treinamento.
+    param X_test, y_test: conjunto de dados de teste.
+    param patience: número de épocas sem melhoria.
+
+    return model: modelo pre-definido. 
     """
     stop = EarlyStopping(monitor='val_loss', patience=patience)
     model = Sequential()
@@ -32,43 +29,7 @@ def ANN_model(X_train, y_train, X_test, y_test, patience=10):
     return model
 
 
-def heaviside(v_signal):
-    """
-    Função de ativação Heaviside 
-    :param v_signal : campo local induzido do neurônio.
-    
-    :return activFunction: retorna valor 0 ou 1 dependendo do campo local induzido.
-    """
-    activFunction = np.heaviside(v_signal, 1)
-    return activFunction
-
-    # Forma alternativa
-    # return 1 * (v_signal >= 0) - 1 * (v_signal < 0)
-
-def sigmoid(v_signal, a):
-  """
-  Função de ativação sigmoid 
-  :param v_signal : campo local induzido do neurônio.
-  :param a : parâmetro de inclinação da função sigmoid.
-
-  :return activFunction: retorna uma faixa contínua de valores 0 e 1.
-  """
-  return 1 / (1 + np.exp(-a * v_signal))
-
-
-def signum(v_signal):
-    """
-    Função de ativação signum
-    :param v_signal : campo local induzido do neurônio.
-
-    :return activFunction: retorna valores na faixa de -1 e 1.
-    """
-    activFunction = np.sign(v_signal)
-    return activFunction
-
-# linear regression functions
-
-def estimativa_coef(x, y):
+def least_squares(x, y):
   """
   Esta função usa o método dos mínimos quadrados como forma de estimar os coeficientes da reta de regressão
   param x, y: diagrama de dispersão.
@@ -78,7 +39,7 @@ def estimativa_coef(x, y):
   # x e y recebem as  a variáveis de alvo e as variáveis independentes.
   # Contendo o diagrama de dispersão.
   
-  n = np.size(x) # número de observações visto que y depende de x
+  n = np.size(x) # número de observações
 
   # retirando a média dos valores de x e y
   mean_x = np.mean(x) 
@@ -112,3 +73,40 @@ def plot_regression_line(x, y, b):
   plt.ylabel('y')
 
   plt.show()
+
+
+""" def heaviside(v_signal):
+    
+    Função de ativação Heaviside 
+    :param v_signal : campo local induzido do neurônio.
+    
+    :return activFunction: retorna valor 0 ou 1 dependendo do campo local induzido.
+
+    activFunction = np.heaviside(v_signal, 1)
+    return activFunction
+
+    # Forma alternativa
+    # return 1 * (v_signal >= 0) - 1 * (v_signal < 0)
+"""
+
+""" def sigmoid(v_signal, a):
+  
+  Função de ativação sigmoid 
+  :param v_signal : campo local induzido do neurônio.
+  :param a : parâmetro de inclinação da função sigmoid.
+
+  :return activFunction: retorna uma faixa contínua de valores 0 e 1.
+  
+  return 1 / (1 + np.exp(-a * v_signal))
+ """
+
+""" def signum(v_signal):
+    
+    Função de ativação signum
+    :param v_signal : campo local induzido do neurônio.
+
+    :return activFunction: retorna valores na faixa de -1 e 1.
+    
+    activFunction = np.sign(v_signal)
+    return activFunction
+"""
