@@ -20,7 +20,7 @@ def requirements(file):
     lineiter = (line.strip() for line in open(file))
     return [line for line in lineiter if line and not line.startswith("#")]
 
-files = ["pyfiles/*"]
+files = ["scripts/*"]
 
 setup(
     name = DISTNAME,
@@ -30,8 +30,8 @@ setup(
     url = URL,
     install_requires = requirements("./requirements.txt"),
     long_description = LONG_DESCRIPTION,
-    packages=['pyfiles'],
-    package_data={'pyfiles': files},
+    packages=['scripts'],
+    package_data={'scripts': files},
     scripts=["runner"],
     test_suite='nose.collector',
     tests_require=['nose'],
@@ -40,7 +40,7 @@ setup(
         'Intended Audience :: Telecommunications Industry',
         'Operating System :: Unix',
         'Programming Language :: Python',
-        'Topic :: Scientific/Engineering',
+        'Topic :: Scientific/Engineering :: Artificial Intelligence',
         'Topic :: Software Development',
     ],
     python_requires = '>=3.9',
