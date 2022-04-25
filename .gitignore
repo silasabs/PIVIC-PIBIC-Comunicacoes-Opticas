@@ -2,6 +2,9 @@
 *.pdf
 *.png
 
+# Jupyter files
+.ipynb_checkpoints
+
 # Referências de pesquisa.
 /referências
 # Arquivos de configurações do ambiente.
