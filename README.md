@@ -30,6 +30,4 @@ Clone este repositório e instale as dependências necessárias.
 $ git clone https://github.com/silasabs/PIVIC-Comunicacoes-Opticas.git
 $ cd PIVIC-Comunicacoes-Opticas
 $ python setup.py install
-```    
-## Citando este repositório
-[Visualizar arquivo de citação](https://github.com/silasabs/PIVIC-Comunicacoes-Opticas/blob/phase-retrieval/CITATION.cff)
+```   
