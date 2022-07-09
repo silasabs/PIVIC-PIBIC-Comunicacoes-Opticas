@@ -1,6 +1,5 @@
 # Extensões de arquivos não versionados.
 *.pdf
-*.png
 
 # Jupyter files
 .ipynb_checkpoints
