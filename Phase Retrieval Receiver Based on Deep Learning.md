@@ -1,7 +1,8 @@
 # Resumo do Artigo
 ### Phase Retrieval Receiver Based on Deep Learning for Minimum-phase Signal Recovery
-
+<br>
 <center>European Conference on Optical Communication (ECOC) 2022 © </center>
+</br>
 
 **.BibTeX**
 
@@ -23,8 +24,8 @@ uma implementação teoricamente perfeita do receptor KK.
 </p>
 
 <br>
-<center>Parâmetros da Rede Neural (CNN)</center>
-<br>
+<center>Parâmetros da Rede Neural Convolucional (CNN)</center>
+</br>
 
 - **D block:** downsampling.
 - **U block:** upsampling.
