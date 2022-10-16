@@ -12,8 +12,8 @@
 <p align=justify><b>Objetivos:</b> Apresentar um esquema de recuperação de fase baseado em Deep Learning (DL) capaz de recostruir a fase de um sinal MP (fase mínima) com potência de portadora fraca (baixos valores de CSPR) além de obter melhorias para a sensibilidade do receptor NN (Neural Network) se comparado com o receptor KK (Kramers-Krnig) de quatro vezes upsampled convencional.</p>
 
 ## Introdução
-O artigo explora as fragilidades do método KK como o fator de upsampling digital relativamente alto sendo necessário para acomodar o alargamento espectral gerado pelas operações não lineares no algoritmo KK, nos testes realizados um fator de quatro upsampling  mostrou ser suficiente em casos práticos visto na referência [03](!https://ieeexplore.ieee.org/document/8346206). Outro fato citado pelo autor e a necessidade de alta relação portadora potência de sinal (CSPR) para atender à condição MP, por tal restrição é introduzido uma penalidade de sensibilidade adicional aumentando o impacto dos efeitos de propagação de fibra não linear. [04](!https://ieeexplore.ieee.org/document/8274918) Tais perdas podem ser reduzidas modificando a cadeia DSP de recuperação de fase tal método sugere que melhorias podem ser obtidas afastando-se de
-uma implementação teoricamente perfeita do receptor KK.
+<p align=justify>O artigo explora as fragilidades do método KK como o fator de upsampling digital relativamente alto sendo necessário para acomodar o alargamento espectral gerado pelas operações não lineares no algoritmo KK, nos testes realizados um fator de quatro upsampling  mostrou ser suficiente em casos práticos visto na referência <a href="https://ieeexplore.ieee.org/document/8346206">[03]</a>. Outro fato citado pelo autor e a necessidade de alta relação portadora potência de sinal (CSPR) para atender à condição MP, por tal restrição é introduzido uma penalidade de sensibilidade adicional aumentando o impacto dos efeitos de propagação de fibra não linear. <a href="https://ieeexplore.ieee.org/document/8274918">[04]</a> Tais perdas podem ser reduzidas modificando a cadeia DSP de recuperação de fase tal método sugere que melhorias podem ser obtidas afastando-se de
+uma implementação teoricamente perfeita do receptor KK.</p>
 
 ## Método Proposto e Resumo da Solução
 
@@ -31,7 +31,7 @@ uma implementação teoricamente perfeita do receptor KK.
 - **U block:** upsampling.
 - (Blocos D/U - Realizado pela aplicação repetida de camadas convolucionais não causais, **convolucionais transpostas** com passo 2. E selecionado 3 como o número de blocos de downsampling e upsampling. 72 amostras de entrada, cada camada possui kernel_size = 3 com 32 canais.)
 - **Função a ser Minimizada:**  Erro quadrático médio.
-- **Otimização:** Adam 
+- **Otimização:** Baseado em Adam 
 - **Taxa de aprendizado:** $10^{-3}$
 - **Tamanho de Lote:** 256 
 
