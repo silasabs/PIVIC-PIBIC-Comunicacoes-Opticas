@@ -1,4 +1,4 @@
-# PIVIC - Recuperação da fase de sinais ópticos  baseada em machine learning
+# Recuperação da Fase de Sinais Ópticos Baseada em Machine Learning
 
 Neste projeto buscamos desenvolver e implementar métodos de PDS e aprendizado de máquina baseada em redes neurais artificiais (RNAs) para o problema de recuperação de fase de sinais ópticos.
 
@@ -18,7 +18,7 @@ Em sistemas de comunicações ópticas os algoritmos de recuperação de fase po
 <p align="center"> Aplicação de um algoritmo de recuperação de fase </p>
 
 <p align="center">
-  <img src="https://i.postimg.cc/kX4Jr4MT/Algoritmo.png)](https://postimg.cc/vDJFfGVn">
+  <img src="https://i.postimg.cc/VLcfH1Sk/diagrama-phase-retrieval.png">
 </p>
 
 Logo poderemos determinar se RNAs podem ser ferramentas úteis na construção de algoritmos de PDS para receptores ópticos de baixo custo e alta eficiência energética.
@@ -30,6 +30,4 @@ Clone este repositório e instale as dependências necessárias.
 $ git clone https://github.com/silasabs/PIVIC-Comunicacoes-Opticas.git
 $ cd PIVIC-Comunicacoes-Opticas
 $ python setup.py install
-```    
-## Citando este repositório
-Silas João Bezerra Soares, & Edson Porto da Silva (2022). silasabs/PIVIC-Comunicacoes-Opticas: Primeira release após os resultados finais da pesquisa.
+```   

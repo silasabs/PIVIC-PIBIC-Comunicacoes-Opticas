@@ -20,6 +20,8 @@ def requirements(file):
     lineiter = (line.strip() for line in open(file))
     return [line for line in lineiter if line and not line.startswith("#")]
 
+files = ["scripts/*"]
+
 setup(
     name = DISTNAME,
     maintainer = MAINTAINER,
@@ -28,12 +30,17 @@ setup(
     url = URL,
     install_requires = requirements("./requirements.txt"),
     long_description = LONG_DESCRIPTION,
+    packages=['optic'],
+    package_data={'optic': files},
+    scripts=["runner"],
+    test_suite='nose.collector',
+    tests_require=['nose'],
     classifiers = [
         'Intended Audience :: Science/Research',
         'Intended Audience :: Telecommunications Industry',
         'Operating System :: Unix',
         'Programming Language :: Python',
-        'Topic :: Scientific/Engineering',
+        'Topic :: Scientific/Engineering :: Artificial Intelligence',
         'Topic :: Software Development',
     ],
     python_requires = '>=3.9',

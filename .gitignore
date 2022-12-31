@@ -1,11 +1,15 @@
 # Extensões de arquivos não versionados.
 *.pdf
-*.png
+
+# Jupyter files
+.ipynb_checkpoints
 
 # Referências de pesquisa.
 /referências
+/Phase_Recovery.egg-info
 # Arquivos de configurações do ambiente.
 /.vscode
+/.spyproject
 # Arquivos de distribuição.
 /build
 /dist
