@@ -8,4 +8,5 @@ scikit-learn >= 1.0.2
 scikit-commpy >= 0.7.0
 numba >= 0.54.1
 ipython >= 7.29.0
+visualkeras >= 0.0.2
 tqdm
