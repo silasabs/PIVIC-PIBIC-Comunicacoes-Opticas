@@ -2,7 +2,9 @@
 
 Neste projeto buscamos desenvolver e implementar métodos de PDS e aprendizado de máquina baseada em redes neurais artificiais (RNAs) para o problema de recuperação de fase de sinais ópticos.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fgithub.com%2Fsilasabs%2FPIVIC-Comunicacoes-Opticas/main)
+<a target="_blank" href="https://colab.research.google.com/github/silasabs/PIVIC-PIBIC-Comunicacoes-Opticas/tree/phase-retrieval">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 ## Algoritmo
 A recuperação de fase é o processo de determinar, por meio de um algoritmo, a fase de um sinal quando apenas medidas de sua amplitude são conhecidas.  Dado um  sinal complexo ![equation](https://latex.codecogs.com/gif.latex?E%28t%29), de amplitude ![equation](https://latex.codecogs.com/gif.latex?%7CE%28t%29%7C) e fase ![equation](https://latex.codecogs.com/gif.latex?%5Cphi%28t%29), este pode ser representado por
