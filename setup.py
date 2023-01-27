@@ -20,7 +20,7 @@ def requirements(file):
     lineiter = (line.strip() for line in open(file))
     return [line for line in lineiter if line and not line.startswith("#")]
 
-files = ["scripts/*"]
+files = ["optic/*"]
 
 setup(
     name = DISTNAME,
