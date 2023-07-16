@@ -477,3 +477,8 @@ def norm_ppf(loc, scale, value):
     '''
 
     return tfp.distributions.Normal(loc, scale).quantile(value).numpy().flatten()
+
+# Create def save model
+
+def saveModel(self, path, save_format='h5'):
+    self.model.save(path, save_format)
