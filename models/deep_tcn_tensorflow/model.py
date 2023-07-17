@@ -271,6 +271,19 @@ class DeepTCN():
 
         # Return the data frame.
         return df.astype(float)
+    
+    
+    def saveModel(self, path):
+        '''
+        Parameters:
+        __________________________________
+        path: str.
+            Directory where the file will be saved.
+
+        save_format: str.
+            File format to be saved.
+        '''
+        self.model.save(path, save_format='h5')
 
 
 def build_fn_with_covariates(
@@ -477,16 +490,3 @@ def norm_ppf(loc, scale, value):
     '''
 
     return tfp.distributions.Normal(loc, scale).quantile(value).numpy().flatten()
-
-
-def saveModel(self, path, save_format='h5'):
-    '''
-    Parameters:
-    __________________________________
-    path: str.
-        Directory where the file will be saved.
-
-    save_format: str.
-        File format to be saved.
-    '''
-    self.model.save(path, save_format)
