@@ -32,4 +32,17 @@ Clone este repositório e instale as dependências necessárias.
 $ git clone https://github.com/silasabs/PIVIC-Comunicacoes-Opticas.git
 $ cd PIVIC-Comunicacoes-Opticas
 $ python setup.py install
-```   
+```
+
+## Citando este repositório
+```
+@misc{PIBIC-Phase-Retrieval, 
+    author = {Silas João Bezerra Soares, Edson Porto da Silva.},
+    title = {PIBIC: Recuperação da Fase de Sinais Ópticos Baseada em Machine Learning},
+    year = {2023},
+    publisher = {GitHub},
+    license = {MIT License},
+    journal = {GitHub repository},
+    howpublished = {\url{https://github.com/silasabs/PIVIC-PIBIC-Comunicacoes-Opticas}}
+}
+```
